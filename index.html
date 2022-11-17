@@ -4,74 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Youtube Mock page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <section class="nav-bar" id="nav-bar">
-            <select name="menu" id="menu-items">
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-                <option value="5"></option>
-                <option value="6"></option>
-                <option value="7"></option>
-                <option value="8"></option>
-                <option value="9"></option>
-                <option value="10"></option>
-                <option value="11"></option>
-                <option value="12"></option>
-                <option value="13"></option>
-                <option value="14"></option>
-            </select>
-            <img src="https://media.istockphoto.com/photos/hand-is-holding-black-clapper-board-or-movie-slateit-is-used-in-video-picture-id1294308946?k=20&m=1294308946&s=612x612&w=0&h=B4-aLtPqL4Hp5OKciHdLuX59bgF6wg83cOFIFr2Dyts=" alt="this is the image I am using for a logo on this dummy project" class="logo" id="logo"><Span id="logo-text" class="logo-text bold">YouVid</Span>
-        </section>
-
-        <!-- <div class="icon-bar">
-            <a class="active" href="#"><i class="fa fa-home"></i></a>
-            <a href="#"><i class="fa fa-search"></i></a>
-            <a href="#"><i class="fa fa-envelope"></i></a>
-            <a href="#"><i class="fa fa-globe"></i></a>
-            <a href="#"><i class="fa fa-trash"></i></a>
-          </div> -->
-
+        <span><img src="" alt="" class="icon"><nav id="vertical-navbar"></nav></span>
+        <span><img src="" alt="" id="youtube-logo"></span>
+        <span id="search"></span>
+        <span id="account-section"></span>
     </header>
     <main>
-        
-        <div class="main-container" id="main-container">
-            <section class="side-bar" id="side-bar">
-                <div class="side-menu" id="side-menu">
-                    <a href="#">Home</a>
-                    <div class="divider"></div>
-                    <a href="#">Video Gallery</a>
-                    <div class="divider"></div>
-                    <a href="#">Events</a>
-                    <div class="divider"></div>
-                    <a href="#">About Us</a>
-                    <div class="divider"></div>
-                    <a href="#">Contact Us</a>
-                    <div class="divider"></div>
-                </div>
-            </section>
-            <section class="video-content" id="video-content">
-                <div class="player-section" id="player-section">
-                    <iframe width="960" height="660" src="https://www.youtube.com/embed/fMyqNFRrMWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video-description" id="video-description">
-                    <yt-pdg-comment-chip-renderer id="paid-comment-chip" slot="content" class="style-scope ytd-comment-renderer" hidden=""><!--css-build:shady--><div id="comment-chip-container" class="style-scope yt-pdg-comment-chip-renderer"><yt-icon class="style-scope yt-pdg-comment-chip-renderer"><!--css-build:shady--></yt-icon><span id="comment-chip-price" class="style-scope yt-pdg-comment-chip-renderer">
-    
-                    </span></div></yt-pdg-comment-chip-renderer>
-                </div>
-            </section>
-            <section class="video-thumbnails" id="video-thumbnails">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL1ddpkZAE7qtKIicnXW4QMLVn3Bppuxqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jl7Jg7ZThkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4POaptBcyG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-        </div>
-        <section class="footer" id="footer"></section>
+        <section id="main-content">
+            <div id="main-video-player"></div>
+            <div id="main-video-description"></div>
+            <div id="comments-section"></div>
+        </section>
+        <aside id="sidebar"></aside>
     </main>
 </body>
 </html>
