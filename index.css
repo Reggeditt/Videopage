@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    /* position: relative; */
+    
+}
+#header{
+    margin: 0;
+    /* position: sticky; */
+    padding: 10px 20px;
+    /* background-color: aqua; */
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+    /* align-items: center;
+    justify-content: center; */
+}
+.icon{
+    height: 20px;
+    background-color:rgba(236, 233, 233, 0.787) ;
+    border-radius: 50%;
+    padding: 5px;
+    margin: auto 10px;
+}
+#menu-logo{height: 40px;}
+#menu-logo img{
+    border: none;
+    border-radius: 0;
+    background-color: white;
+}
+#youtube-logo{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -20px;
+    left: 10px;
+}
+
+#menu-logo, #account-section{
+    display: flex;
+    width: 15vw;
+}
+#search{
+    background-color: rgba(236, 233, 233, 0.787);
+    display: flex;
+    width: 40vw;
+    border: .1px solid rgba(160, 160, 160, 0.6);
+    border-radius: 50px;
+    height: fit-content;
+    margin-left: 10%;
+}
+#search input{
+    margin: 0;
+    height: 35px;
+    width: 47vw;
+    border: .1px solid rgba(160, 160, 160, 0.6);
+    /* border: none; */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: auto auto auto 40px;
+    font-size: 18px;
+    margin-right: 45px;
+}
+/* #record-icon{
+    margin-right: 80px;
+} */
+#account-section{
+    margin-left: 12%;
+}
+main{
+    background-color: blueviolet;
+    width: 100vw;
+    height: 900px;
+}
