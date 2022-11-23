@@ -10,21 +10,23 @@
 <body>
     <div id="header">
         <span id="menu-logo">
-            <img src="assets/images/menu-svgrepo-com.svg" class="icon">
+            <img src="assets/images/menu-svgrepo-com.svg" class="icon" id="menu-icon">
             <nav id="vertical-navbar">
-                <a href="" class="home-nav-link"><img src="" alt="" class="nav-icon"> Home</a>
-                <a href="" class="shorts-nav-link"><img src="" alt="" class="nav-icon">Shorts</a>
-                <a href="" class="Subscriptions-nav-link"><img src="" alt="" class="nav-icon">Subscriptions</a>
-                <a href="" class="Library-nav-link"><img src="" alt="" class="nav-icon">Library</a>
-                <a href="" class="History-nav-link"><img src="" alt="" class="nav-icon">History</a>
-                <a href="" class="videos-nav-link"><img src="" alt="" class="nav-icon">Your videos</a>
-                <a href="" class="watch-later-nav-link"><img src="" alt="" class="nav-icon">Watch later</a>
+                <a href="" class="home-nav-link"><img src="assets/images/home-svgrepo-com.svg" alt="" class="nav-icon"><span>Home</span> </a>
+                <a href="" class="shorts-nav-link"><img src="assets/images/youtube-shorts-logo-15251.svg" alt="" class="nav-icon"><span>Shorts</span></a>
+                <a href="" class="Subscriptions-nav-link"><img src="assets/images/icons8-video-playlist-50.png" alt="" class="nav-icon"><span>Subscriptions</span></a>
+                <hr>
+                <a href="" class="Library-nav-link"><img src="assets/images/video-add-svgrepo-com.svg" alt="" class="nav-icon"><span>Library</span></a>
+                <a href="" class="History-nav-link"><img src="assets/images/history-svgrepo-com.svg" alt="" class="nav-icon"><span>History</span></a>
+                <a href="" class="videos-nav-link"><img src="assets/images/video-svgrepo-com.svg" alt="" class="nav-icon"><span>Your videos</span></a>
+                <a href="" class="watch-later-nav-link"><img src="assets/images/history-svgrepo-com.svg" alt="" class="nav-icon"><span>Watch later</span></a>
                 <div class="more">
                     <a href="" class="playlists-nav-link"><img src="" alt="" class="nav-icon">Your playlists</a>
                     <a href="" class="some-nav-link"><img src="" alt="" class="nav-icon">Some link</a>
                     <a href="" class="some-nav-link"><img src="" alt="" class="nav-icon">Some link</a>
                 </div>
                 <button class="show-btn">Show more</button>                
+                <hr>
             </nav>
             <img src="assets/images/youtube-svgrepo-com.svg" alt="" id="youtube-logo"></span>
         </span>
@@ -40,7 +42,7 @@
             <img src="assets/images/profile-svgrepo-com.svg" alt="" class="icon">
         </span>
     </div>
-    <main>
+    <main id="main">
         <section id="main-content">
             <div id="main-video-player">
                 <iframe  src="https://www.youtube.com/embed/bMknfKXIFA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -134,16 +136,33 @@ Learn React by building eight real-world projects and solving 140+ coding challe
     
         function showMore(){
             if(dots.style.display == "none"){
-                dots.style.display = "inline"
-                extraText.style.display = "none"
-                buton.innerHTML = "Show More"
+                dots.style.display = "inline";
+                extraText.style.display = "none";
+                buton.innerHTML = "Show More";
             }
             else{
-                dots.style.display = "none"
-                extraText.style.display = "inline"
-                buton.innerHTML = "Show Less"
+                dots.style.display = "none";
+                extraText.style.display = "inline";
+                buton.innerHTML = "Show Less";
             }
         }
+
+        const mainEl = document.getElementById('main');
+        const menuIconEl = document.getElementById('menu-icon')
+        const navbar = document.getElementById('vertical-navbar')
+        function showNav(){
+            if(navbar.style.display === "none"){
+                navbar.style.display = "flex";
+                //attempt to create the overlay effect when the nav menu opens...
+                // mainEl.style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7))"
+            }else{
+                navbar.style.display = "none";
+            }
+        }
+        menuIconEl.addEventListener("click", ()=>{
+            // alert("the menu has been clicked")
+            showNav();
+        })
     </script>
 </body>
 </html>
