@@ -13,7 +13,7 @@ body{
     /* background-color: aqua; */
     display: flex;
     width: 100vw;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* align-items: center;
     justify-content: center; */
 }
@@ -27,11 +27,27 @@ body{
 .icon:hover{
     cursor: pointer;
 }
-#menu-logo{height: 40px;}
+#menu-logo{
+    height: 40px;
+    position: relative;
+}
 #menu-logo img{
     border: none;
     border-radius: 0;
     background-color: white;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    background-color: white;
+}
+nav *{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.751);
+    line-height: 35px;
 }
 #youtube-logo{
     width: 80px;
